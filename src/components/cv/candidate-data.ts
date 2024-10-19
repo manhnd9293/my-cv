@@ -3,7 +3,7 @@ export const candidate = {
   title: "Software engineer",
   details: {
     title: "Software Engineer",
-    address: "Imperia Garden, Nguyen Huy Tuong Street, Thanh Xuan, Hanoi",
+    address: "Nguyen Huy Tuong Street, Thanh Xuan, Hanoi",
     dob: "09 Feb 1993",
     email: "manhnd9293@gmail.com",
     phone: "0911.148.568",
