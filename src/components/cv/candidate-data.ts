@@ -166,6 +166,25 @@ export const candidate = {
         infrastructure: "NginX, Docker, EC2",
       },
     },
+    {
+      name: "Side project: Ecommerce system",
+      demoLink: 'https://ecommerce.manhnd.men',
+      sourceCode: 'https://github.com/manhnd9293/my-commerce-be',
+      description:
+        "The website is an ecommerce system which includes front store and admin page. Some features i developed are:",
+      features: [
+        "Sign in/ sign up, includes sign in by Google",
+        "Manage categories and products, orders information",
+        "Admin dashboard to show statistic information by day, month, year about revenue, order, users, sale quantity",
+        "Front store features such as:  list product, get product detail, add product to cart and checkout",
+      ],
+      technology: {
+        backend: "NestJS, TypeORM",
+        frontend: 'ReactJS, TailwindCSS, ShadcnUI',
+        database: "PostgresSQL",
+        infrastructure: "EC2, Nginx, Github Action",
+      },
+    },
   ],
   education: [
     {

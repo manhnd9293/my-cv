@@ -124,6 +124,16 @@ function Cv() {
           {candidate.projects.map((p, index) => (
             <div key={index}>
               <div className={"font-semibold italic"}>{p.name}</div>
+              {p.demoLink && (
+                <div>
+                  Demo: <a className={"ml-1 text-blue-700 underline"} href={p.demoLink}>{p.demoLink}</a>
+                </div>
+              )}
+              {p.sourceCode && (
+                <div>
+                  Source Code: <a className={"ml-1 text-blue-700 underline"} href={p.sourceCode}>{p.sourceCode}</a>
+                </div>
+              )}
               <div>{p.description}</div>
               <ul className={"mt-1 list-disc ml-8"}>
                 {p.features.map((feature, idx) => (
@@ -134,6 +144,9 @@ function Cv() {
               <ul className={"list-disc ml-8"}>
                 {p.technology?.backend && (
                   <li>Backend: {p.technology.backend}</li>
+                )}
+                {p.technology?.frontend && (
+                  <li>FrontEnd: {p.technology.frontend}</li>
                 )}
                 {p.technology?.database && (
                   <li>Database: {p.technology.database}</li>
