@@ -10,13 +10,13 @@ export const candidate = {
     github: "https://github.com/manhnd9293",
   },
   summary:
-    "I’m an experienced developer with 4 years of experience working in domains: ecommerce, business management. I’m specialized in NodeJS and Javascript technologies and always try to deliver high quality source code which is maintainable, reliable and have high performance.",
+    "I’m an experienced developer with 5 years of experience working in domains: ecommerce, business management. I’m specialized in NodeJS and Javascript technologies and always try to deliver high quality source code which is maintainable, reliable and have high performance.",
   careerExperience: [
     {
       company: "Uptempo Vietnam",
       title: "Software engineer",
       from: "May 2023",
-      to: "Current",
+      to: "Dec 2024",
       responsibility: [
         "Joining engineer team to develop software system for Korean clients",
         "Collaborate with BA and Design Team in Korean to clarify software requirements",
