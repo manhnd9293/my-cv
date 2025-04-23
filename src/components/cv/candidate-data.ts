@@ -16,7 +16,7 @@ export const candidate = {
       company: "Uptempo Vietnam",
       title: "Software engineer",
       from: "May 2023",
-      to: "Dec 2024",
+      to: "Jan 2025",
       responsibility: [
         "Joining engineer team to develop software system for Korean clients",
         "Collaborate with BA and Design Team in Korean to clarify software requirements",
