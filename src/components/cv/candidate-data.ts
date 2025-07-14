@@ -10,7 +10,7 @@ export const candidate = {
     github: "https://github.com/manhnd9293",
   },
   summary:
-    "I’m an experienced developer with 5 years of experience working in domains: ecommerce, business management. I’m specialized in NodeJS and Javascript technologies and always try to deliver high quality source code which is maintainable, reliable and have high performance.",
+    "I’m an experienced developer with 5 years of experience working in domains: ecommerce, business management. I can work in both backend side using framework as Java Spring boot, NodeJS and in frontend side using React with Typescript. I always try to deliver high quality working code which is maintainable, reliable and have high performance.",
   careerExperience: [
     {
       company: "Uptempo Vietnam",
@@ -24,7 +24,7 @@ export const candidate = {
         "Review code for other team members",
         "Setup infrastructure in Google Cloud and AWS to deploy services to environments (development, staging, production)",
         "Setup CI/CD pipeline for projects to automate deploy process.",
-        "Using Technology: NestJS, ReactJS, AWS, Google Cloud, Terraform, Docker, MySQL, Redis",
+        "Using Technology: Java Spring Boot, NodeJS, ReactJS, AWS, Google Cloud, Terraform, Docker, MySQL, Redis",
       ],
     },
     {
@@ -48,141 +48,56 @@ export const candidate = {
       responsibility: [
         "Participate in projects to build enterprise systems on web for Japanese Client.",
         "Main responsibilities: develop features, fix bugs, unit test, integration test",
-        "Using Technology: NodeJS, Spring Boot, Vuejs, MySQL, AWS",
+        "Using Technology: Spring Boot, NodeJS, Vuejs, MySQL, AWS",
       ],
     },
   ],
   projects: [
     {
-      name: "Customer support Chat System",
-      description:
-        "This system is for customer care agents of ecommerce companies communicating with customers when they are visiting online stores. The system is designed as micro services with REST API, web socket service, and worker nodes. Some main features that I developed are:",
+      name: "Saving and investment application",
+      description: "The project is a fintech product which allows users to invest their money into financial products like saving certificates, bonds, stocks, gold. Some features I developed are:",
       features: [
-        "Creating API endpoint for managing information about customer care agents, stores, support categories, …",
-        "Develop real time dashboard to show statistic data about conversation, rating, chat duration, …",
-        "Integrate with Stripe platform to purchase subscription plans, additional seats and capacity in the system.",
-        "Limit features which users can use based on their subscription plan and purchased capacity.",
-        "Link and synchronize store data between CRM system and chat system",
-        "Setting open, close time for stores and category services. Identify customer messages were sent within or out of working time to handle correspondingly",
-        "Auto assign agents to conversations, tracking customer idle state and auto response",
-        "Setup codebase for REST API service and worker nodes.",
+        "Saving: handling transactions depositing money to app from users including: creating payment links, listening to event from payment gateway, allocating their fund to financial assets like bonds, calculating transaction fees",
+        "Gold trading: handling transactions buying gold from vendors and end users, managing company's gold inventory, handling users' withdrawal physical gold in partner's store",
+        "Stock trading: handling transactions placing stock order in odd lots from users, aggregating odd lots orders to even lots orders, integrating with API of stock company for placing order in Stock Exchange",
+        "User management: handling EKYC flow for users including integrating with TrueID API, sending email notifications for verifying failures"
       ],
       technology: {
-        backend: "Nodejs, Python, Fastify, SocketIO",
-        database: "Mongodb, Redis",
-        infrastructure: "Google Kubernetes Engine",
-      },
-    },
-    {
-      name: "Construction Supervision System",
-      description:
-        "The system is used to support construction supervision work by using web technologies, computer files and online meeting to substitute for paper and on-site supervising activities. Some main features that I developed are:",
-      features: [
-        "Design database schema and create API endpoints for managing entities in the system such as: users, construction site, drawing, supervision area, inspection checklist, inspection category, online meeting, project documents",
-        "Creating supervision plans with drawing, inspection position, inspection category, inspection status",
-        "Upload and download drawings, site images, videos",
-        "Integrate with Amazon Chime SDK to create online video meeting to perform online supervision. Real time update documents and status of the meeting to all participants",
-        "Storing construction documents under folder tree structure. Supporting copy, paste, cut, rename actions with files and folders",
-        "Setup infrastructure to securely deploy the system to AWS",
-      ],
-      technology: {
-        backend: "NestJS, Prisma, SocketIO",
-        database: "PostgreSQL, Redis",
-        infrastructure:
-          "AWS EC2, Load Balance, CloudFront, S3, Route 53, AWS Chime SDK, Github Action",
-      },
-    },
-    {
-      name: "Korean Learning Application",
-      description:
-        "The application support Korean language learners to prepare for Topik exams. I have role of backend developer in the project. Some features I developed are: ",
-      features: [
-        "Design database schema and create API endpoints for managing entities in the system such as: users, vocabulary, learn history, mock exams, point settings, ...",
-        "Handle upload excel files to create multiple choices mock exam questions and vocabulary storages",
-        "Create multiple choices quizzes for testing vocabulary learning from vocabulary storages",
-        "Tracking times users using features of the app",
-        "Handle update bonus points for users when they complete tasks such as answer quiz, daily attendance, ....",
-        "Create dashboard to show statistic data of users such as: active days, hours using app, correct answer ratio, learning history, mock exam result history ...",
-        "Setup infrastructure in GCP to deploy the system",
-      ],
-      technology: {
-        backend: "NestJS, GraphQL",
-        database: "MySQL",
-        infrastructure: "Compute Engine, Cloud Storage",
-      },
-    },
-
-    {
-      name: "Resource Management System",
-      description:
-        "The system is used to manage freelancers’ information and their projects from many countries in the world. My responsibilities are:",
-      features: [
-        "Design database schema entities in the system including business units, freelancers, projects, invoices ...",
-        "Develop features to query and update information of entities in the system (create, update, filter, paging, delete, restore data)",
-        "Integrate with Google Authentication API for feature login using Google account",
-        "Check users’ authorization based on their roles",
-        "Tracking changes in freelancer profile data and show these change logs when needed",
-        "Setup infrastructure for develop, staging, production environments using Google Cloud Platform",
-        "Set up CI/CD pipeline using CloudBuild to automatically deploy the system to environments",
-      ],
-      technology: {
-        backend: "NestJs, Apollo Server, TypeORM",
-        database: "PostgreSQL, Redis",
-        infrastructure:
-          "Docker, Cloud Run, Load balance, Cloud Build, Google SQL, Google Compute Engine, Google Artifact Registry, Terraform",
-      },
-    },
-    {
-      name: "Cross-border Project Management System",
-      description:
-        "The system is used to manage projects and facilitate communication between members who live in different countries. I worked as a fullstack developer in this project. Some features I developed are:",
-      features: [
-        "Design database and perform update action for system's entities such as: projects, users, documents, conversation, messages, system settings",
-        "Manage data of project's tickets such as: category, name, due date, priority, state , attachments, description, comments",
-        "Store and show change logs of tickets which include information about update time, old and new contents, person update",
-        "Uploading, deleting image and documents to and from a project",
-        "Chatting between member in projects, translate original messages to languages set by current user",
-        "Translating pdf and docx documents and sharing between members",
-      ],
-      technology: {
-        backend: "NestJs, TypeORM",
-        database: "MySQL",
-        infrastructure:
-          "EC2, Docker, Nginx, RDS, S3, Google Translate API, Github Action, Terraform",
-      },
-    },
-    {
-      name: "HR information management system",
-      description:
-        "The system is developed for HR department to manage work shift of workers. Some main functions include:",
-      features: [
-        "Manage employee information about: personal data, contract, departments, timekeeping",
-        "Calculate number of working days in month for employees from timekeeping machine and daily records and send mail results to them",
-        "Display and export statistic information on request from HR manager",
-      ],
-      technology: {
-        backend: "Spring boot",
-        database: "MySQL",
+        backend: "Java 17, Spring boot, Hibernate",
+        database: "PostgreSQL",
         infrastructure: "NginX, Docker, EC2",
       },
     },
     {
-      name: "Side project: Ecommerce system",
-      demoLink: 'https://ecommerce.manhnd.men',
-      sourceCode: 'https://github.com/manhnd9293/my-commerce-be',
-      description:
-        "The website is an ecommerce system which includes front store and admin page. Some features i developed are:",
+      name: "Project Management System",
+      description: "The project is used to manage freelancers information and projects for a Korean client in translations and webtoon industry, which hires freelancers from different countries and do business mostly in Korean market. Some features I developed are:",
       features: [
-        "Sign in/ sign up, includes sign in by Google",
-        "Manage categories and products, orders information",
-        "Admin dashboard to show statistic information by day, month, year about revenue, order, users, sale quantity",
-        "Front store features such as:  list product, get product detail, add product to cart and checkout",
+        "Manging freelancers' information including their contact, education, work experience, skills set, rates",
+        "Managing projects information including duration, budget, skill required",
+        "Recommend suitable candidates for projects,estimate budget, tracking phases, finalising projects, rating freelancers, managing invoices",
+        "Create project epics, ticket tracking, managing upload documents under folder structure",
       ],
       technology: {
-        backend: "NestJS, TypeORM",
-        frontend: 'ReactJS, TailwindCSS, ShadcnUI',
-        database: "PostgresSQL",
-        infrastructure: "EC2, Nginx, Github Action",
+        backend: "Java 17, Spring boot, Hibernate",
+        database: "Postgresql, Redis",
+        infrastructure: "AWS EC2, Load balancer, S3, CDN, RDS",
+      },
+    },
+
+    {
+      name: "HR information management system",
+      description:
+        "The system manages employee personal data, work shift and payroll for a manufacturing company in Japan with more than 10,0000 workers and office staffs. Some main functions include:",
+      features: [
+        "Manage employee information about: personal data, contract, departments, timekeeping",
+        "Work shift management: show available date, register, accept, reject",
+        "Payroll calculation based on timekeeping data",
+        "Display and export statistic report for board of management",
+      ],
+      technology: {
+        backend: "Java 11, Spring boot, Hibernate",
+        database: "Postgresql, Redis",
+        infrastructure: "NginX, Docker, EC2",
       },
     },
   ],
