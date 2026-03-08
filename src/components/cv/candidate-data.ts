@@ -10,8 +10,22 @@ export const candidate = {
     github: "https://github.com/manhnd9293",
   },
   summary:
-    "I’m an experienced developer with 5 years of experience working in domains: ecommerce, business management. I’m specialized in NodeJS and Javascript technologies and always try to deliver high quality source code which is maintainable, reliable and have high performance.",
+    "I’m an experienced developer with 6 years of experience working in domains:  ecommerce, healthcare, business management. I’m specialized in NodeJS and Javascript technologies and always try to deliver high quality source code which is maintainable, reliable and have high performance.",
   careerExperience: [
+    {
+      company: "Powergate Software",
+      title: "Senior Software engineer",
+      from: "March 2025",
+      to: "Current",
+      responsibility: [
+        "Collaborate with BA and Designer Team to clarify software requirements",
+        "Design high level software architect for projects",
+        "Design feature flow, API endpoints and implement, test and fix them if any",
+        "Review code for other team members",
+        "Setup infrastructure in AWS to deploy services to environments (development, staging, production)",
+        "Using Technology: NestJS, ReactJS, AWS, Docker, Postgres, Redis",
+      ],
+    },
     {
       company: "Uptempo Vietnam",
       title: "Software engineer",
@@ -54,6 +68,135 @@ export const candidate = {
   ],
   projects: [
     {
+      from: "Nov 2025",
+      to: "Mar 2026",
+      name: "Chatbot support booking for clinics",
+      description:
+        "The system send suggestions to patients of clinics, handle their relies and booking for them. I am developer leader in the project. Features I developed are: ",
+      features: [
+        "Synchronize data with clinics management software to get data of patients, practitioners, appointments ...",
+        "Analyze patients' appointment history to find patterns then find matched appointment in the future",
+        "Send recommend appointments to patients via sms",
+        "Handle client reply via sms to determine their intentions then perform suitable actions such as: perform booking, send others suggestion, forward unrelated requests to clinics staffs ...",
+        "Handle collect payment when patients attend at appointments suggested by the system",
+        "Building dashboard to measure efficiency of the app with clients"
+      ],
+      technology: {
+        backend: "NestJS",
+        thirdParty: "OpenAI, Twilio, Stripe, Cliniko",
+        database: "PostgreSQL, Redis",
+        infrastructure: "EC2, RDS, VPC",
+      },
+    },
+    {
+      from: "Jun 2025",
+      to: "Oct 2025",
+      name: "Chatbot support patients with mental health issues",
+      description:
+        "The system perform as a virtual psychology doctor to consult patients with mental health issues. I am backend developer in the project. Features I developed are: ",
+      features: [
+        "Manage information of users, conversations, messages, curing techniques, documents, notifications ... ",
+        "Following OWASP best practices such as: revoke access, expire token, prevent concurrent login, 2 factors authentication,... to ensure the system is highly secured",
+        "Handle realtime chat between patients and chatbot: receive and send message via websocket, automatically end conversation when users inactive for a time period",
+        "Send realtime notification to users",
+        "Handle setup communication between chat system and AI system via Kafka message queue",
+        "Tracking app usage time of users in day to create dashboard and reports",
+        "Periodically send survey to users and save replies for statistic records"
+      ],
+      technology: {
+        backend: "NestJS",
+        database: "PostgreSQL",
+        infrastructure: "EC2, RDS, VPC, Kafka",
+      },
+    },
+    {
+      from: "Aug 2024",
+      to: "Jan 2025",
+      name: "Korean Learning Application",
+      description:
+        "The application support Korean language learners to prepare for Topik exams. I have role of backend developer in the project. Some features I developed are: ",
+      features: [
+        "Design database schema and create API endpoints for managing entities in the system such as: users, vocabulary, learn history, mock exams, point settings, ...",
+        "Handle upload excel files to create multiple choices mock exam questions and vocabulary storages",
+        "Create multiple choices quizzes for testing vocabulary learning from vocabulary storages",
+        "Tracking times users using features of the app",
+        "Handle update bonus points for users when they complete tasks such as answer quiz, daily attendance, ....",
+        "Create dashboard to show statistic data of users such as: active days, hours using app, correct answer ratio, learning history, mock exam result history ...",
+        "Setup infrastructure in GCP to deploy the system",
+      ],
+      technology: {
+        backend: "NestJS, GraphQL",
+        database: "MySQL",
+        infrastructure: "Compute Engine, Cloud Storage",
+      },
+    },
+    {
+      from: "Jan 2024",
+      to: "Aug 2024",
+      name: "Construction Supervision System",
+      description:
+        "The system is used to support construction supervision work by using web technologies, computer files and online meeting to substitute for paper and on-site supervising activities. Some main features that I developed are:",
+      features: [
+        "Design database schema and create API endpoints for managing entities in the system such as: users, construction site, drawing, supervision area, inspection checklist, inspection category, online meeting, project documents",
+        "Creating supervision plans with drawing, inspection position, inspection category, inspection status",
+        "Upload and download drawings, site images, videos",
+        "Integrate with Amazon Chime SDK to create online video meeting to perform online supervision. Real time update documents and status of the meeting to all participants",
+        "Storing construction documents under folder tree structure. Supporting copy, paste, cut, rename actions with files and folders",
+        "Setup infrastructure to securely deploy the system to AWS",
+      ],
+      technology: {
+        backend: "NestJS, Prisma, SocketIO",
+        database: "PostgreSQL, Redis",
+        infrastructure:
+          "AWS EC2, Load Balance, CloudFront, S3, Route 53, AWS Chime SDK, Github Action",
+      },
+    },
+    {
+      from: "Jul 2023",
+      to: "Dec 2023",
+      name: "Freelancer Management System",
+      description:
+        "The system is used to manage freelancers’ information and their projects from many countries in the world. My responsibilities are:",
+      features: [
+        "Design database schema entities in the system including business units, freelancers, projects, invoices ...",
+        "Develop features to query and update information of entities in the system (create, update, filter, paging, delete, restore data)",
+        "Integrate with Google Authentication API for feature login using Google account",
+        "Check users’ authorization based on their roles",
+        "Tracking changes in freelancer profile data and show these change logs when needed",
+        "Setup infrastructure for develop, staging, production environments using Google Cloud Platform",
+        "Set up CI/CD pipeline using CloudBuild to automatically deploy the system to environments",
+      ],
+      technology: {
+        backend: "NestJs, Apollo Server, TypeORM",
+        database: "PostgreSQL, Redis",
+        infrastructure:
+          "Docker, Cloud Run, Load balance, Cloud Build, Google SQL, Google Compute Engine, Google Artifact Registry, Terraform",
+      },
+    },
+    {
+      from: "Mar 2023",
+      to: "Jun 2023",
+      name: "Cross-border Project Management System",
+      description:
+        "The system is used to manage projects and facilitate communication between members who live in different countries. I worked as a fullstack developer in this project. Some features I developed are:",
+      features: [
+        "Design database and perform update action for system's entities such as: projects, users, documents, conversation, messages, system settings",
+        "Manage data of project's tickets such as: category, name, due date, priority, state , attachments, description, comments",
+        "Store and show change logs of tickets which include information about update time, old and new contents, person update",
+        "Uploading, deleting image and documents to and from a project",
+        "Chatting between member in projects, translate original messages to languages set by current user",
+        "Translating pdf and docx documents and sharing between members",
+      ],
+      technology: {
+        backend: "NestJs, TypeORM",
+        database: "MySQL",
+        infrastructure:
+          "EC2, Docker, Nginx, RDS, S3, Google Translate API, Github Action, Terraform",
+      },
+    },
+    {
+      from: "Jan 2022",
+      to: "Feb 2023",
       name: "Customer support Chat System",
       description:
         "This system is for customer care agents of ecommerce companies communicating with customers when they are visiting online stores. The system is designed as micro services with REST API, web socket service, and worker nodes. Some main features that I developed are:",
@@ -74,84 +217,8 @@ export const candidate = {
       },
     },
     {
-      name: "Construction Supervision System",
-      description:
-        "The system is used to support construction supervision work by using web technologies, computer files and online meeting to substitute for paper and on-site supervising activities. Some main features that I developed are:",
-      features: [
-        "Design database schema and create API endpoints for managing entities in the system such as: users, construction site, drawing, supervision area, inspection checklist, inspection category, online meeting, project documents",
-        "Creating supervision plans with drawing, inspection position, inspection category, inspection status",
-        "Upload and download drawings, site images, videos",
-        "Integrate with Amazon Chime SDK to create online video meeting to perform online supervision. Real time update documents and status of the meeting to all participants",
-        "Storing construction documents under folder tree structure. Supporting copy, paste, cut, rename actions with files and folders",
-        "Setup infrastructure to securely deploy the system to AWS",
-      ],
-      technology: {
-        backend: "NestJS, Prisma, SocketIO",
-        database: "PostgreSQL, Redis",
-        infrastructure:
-          "AWS EC2, Load Balance, CloudFront, S3, Route 53, AWS Chime SDK, Github Action",
-      },
-    },
-    {
-      name: "Korean Learning Application",
-      description:
-        "The application support Korean language learners to prepare for Topik exams. I have role of backend developer in the project. Some features I developed are: ",
-      features: [
-        "Design database schema and create API endpoints for managing entities in the system such as: users, vocabulary, learn history, mock exams, point settings, ...",
-        "Handle upload excel files to create multiple choices mock exam questions and vocabulary storages",
-        "Create multiple choices quizzes for testing vocabulary learning from vocabulary storages",
-        "Tracking times users using features of the app",
-        "Handle update bonus points for users when they complete tasks such as answer quiz, daily attendance, ....",
-        "Create dashboard to show statistic data of users such as: active days, hours using app, correct answer ratio, learning history, mock exam result history ...",
-        "Setup infrastructure in GCP to deploy the system",
-      ],
-      technology: {
-        backend: "NestJS, GraphQL",
-        database: "MySQL",
-        infrastructure: "Compute Engine, Cloud Storage",
-      },
-    },
-
-    {
-      name: "Resource Management System",
-      description:
-        "The system is used to manage freelancers’ information and their projects from many countries in the world. My responsibilities are:",
-      features: [
-        "Design database schema entities in the system including business units, freelancers, projects, invoices ...",
-        "Develop features to query and update information of entities in the system (create, update, filter, paging, delete, restore data)",
-        "Integrate with Google Authentication API for feature login using Google account",
-        "Check users’ authorization based on their roles",
-        "Tracking changes in freelancer profile data and show these change logs when needed",
-        "Setup infrastructure for develop, staging, production environments using Google Cloud Platform",
-        "Set up CI/CD pipeline using CloudBuild to automatically deploy the system to environments",
-      ],
-      technology: {
-        backend: "NestJs, Apollo Server, TypeORM",
-        database: "PostgreSQL, Redis",
-        infrastructure:
-          "Docker, Cloud Run, Load balance, Cloud Build, Google SQL, Google Compute Engine, Google Artifact Registry, Terraform",
-      },
-    },
-    {
-      name: "Cross-border Project Management System",
-      description:
-        "The system is used to manage projects and facilitate communication between members who live in different countries. I worked as a fullstack developer in this project. Some features I developed are:",
-      features: [
-        "Design database and perform update action for system's entities such as: projects, users, documents, conversation, messages, system settings",
-        "Manage data of project's tickets such as: category, name, due date, priority, state , attachments, description, comments",
-        "Store and show change logs of tickets which include information about update time, old and new contents, person update",
-        "Uploading, deleting image and documents to and from a project",
-        "Chatting between member in projects, translate original messages to languages set by current user",
-        "Translating pdf and docx documents and sharing between members",
-      ],
-      technology: {
-        backend: "NestJs, TypeORM",
-        database: "MySQL",
-        infrastructure:
-          "EC2, Docker, Nginx, RDS, S3, Google Translate API, Github Action, Terraform",
-      },
-    },
-    {
+      from: "Jan 2020",
+      to: "Aug 2020",
       name: "HR information management system",
       description:
         "The system is developed for HR department to manage work shift of workers. Some main functions include:",
@@ -164,25 +231,6 @@ export const candidate = {
         backend: "Spring boot",
         database: "MySQL",
         infrastructure: "NginX, Docker, EC2",
-      },
-    },
-    {
-      name: "Side project: Ecommerce system",
-      demoLink: 'https://ecommerce.manhnd.men',
-      sourceCode: 'https://github.com/manhnd9293/my-commerce-be',
-      description:
-        "The website is an ecommerce system which includes front store and admin page. Some features i developed are:",
-      features: [
-        "Sign in/ sign up, includes sign in by Google",
-        "Manage categories and products, orders information",
-        "Admin dashboard to show statistic information by day, month, year about revenue, order, users, sale quantity",
-        "Front store features such as:  list product, get product detail, add product to cart and checkout",
-      ],
-      technology: {
-        backend: "NestJS, TypeORM",
-        frontend: 'ReactJS, TailwindCSS, ShadcnUI',
-        database: "PostgresSQL",
-        infrastructure: "EC2, Nginx, Github Action",
       },
     },
   ],

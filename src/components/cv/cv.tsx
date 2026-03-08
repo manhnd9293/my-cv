@@ -29,11 +29,11 @@ function Cv() {
         </div>
         <div className={"flex gap-2 ml-3"}>
           <div>
-            <div className={"col-span-1"}>Home address</div>
-            <div className={"col-span-1"}>Date of birth</div>
-            <div className={"col-span-1"}>Email</div>
-            <div className={"col-span-1"}>Mobile</div>
-            <div className={"col-span-1"}>Github</div>
+            <div className={"col-span-1"}>Home address:</div>
+            <div className={"col-span-1"}>Date of birth:</div>
+            <div className={"col-span-1"}>Email:</div>
+            <div className={"col-span-1"}>Mobile:</div>
+            <div className={"col-span-1"}>Github:</div>
           </div>
           <div>
             <div className={"col-span-11"}>{candidate.details.address}</div>
@@ -120,10 +120,13 @@ function Cv() {
           </svg>
           <span>Projects</span>
         </div>
-        <div className={"ml-3 flex flex-col gap-2"}>
+        <div className={"ml-6 flex flex-col gap-4"}>
           {candidate.projects.map((p, index) => (
             <div key={index}>
-              <div className={"font-semibold italic"}>{p.name}</div>
+              <div>
+                <div className={"font-semibold italic"}>Project name: {p.name} </div>
+                <div className={'italic'}>Time: {p.from} - {p.to}</div>
+              </div>
               {p.demoLink && (
                 <div>
                   Demo: <a className={"ml-1 text-blue-700 underline"} href={p.demoLink}>{p.demoLink}</a>
@@ -134,7 +137,7 @@ function Cv() {
                   Source Code: <a className={"ml-1 text-blue-700 underline"} href={p.sourceCode}>{p.sourceCode}</a>
                 </div>
               )}
-              <div>{p.description}</div>
+              <div className={'ml-2'}>{p.description}</div>
               <ul className={"mt-1 list-disc ml-8"}>
                 {p.features.map((feature, idx) => (
                   <li key={idx}>{feature}</li>
@@ -146,7 +149,10 @@ function Cv() {
                   <li>Backend: {p.technology.backend}</li>
                 )}
                 {p.technology?.frontend && (
-                  <li>FrontEnd: {p.technology.frontend}</li>
+                  <li>Frontend: {p.technology.frontend}</li>
+                )}
+                {p.technology.thirdParty && (
+                  <li>Third party services: {p.technology.thirdParty}</li>
                 )}
                 {p.technology?.database && (
                   <li>Database: {p.technology.database}</li>
